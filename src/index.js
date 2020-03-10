@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MyNavbar from './components/navbar';
 
 // Add css files
 import 'bootstrap/dist/css/bootstrap.min.css'; // CSS from Bootstrap
@@ -10,21 +11,15 @@ import './index.css'; // My own CSS
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
+import MyJumbotron from './components/jumbotron';
 
 const Home = (props) => {
     return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-12 d-flex justify-content-center">
-                    <i className="fab fa-html5 fa-5x"></i>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-md-12 d-flex justify-content-center">
-                    <p className="text-success">Welcome to Webpack, Bootstrap and ReactJS</p>
-                </div>
-            </div>
-        </div>
+        <>
+        <MyNavbar />
+        <MyJumbotron />
+        
+        </>
     )
 }
 
