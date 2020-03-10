@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MyNavbar from './components/navbar';
+import MyJumbotron from './components/jumbotron';
 
 // Add css files
 import 'bootstrap/dist/css/bootstrap.min.css'; // CSS from Bootstrap
@@ -11,16 +12,14 @@ import './index.css'; // My own CSS
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
-import MyJumbotron from './components/jumbotron';
 
 const Home = (props) => {
     return (
         <>
         <MyNavbar />
         <MyJumbotron />
-        
         </>
-    )
+    );
 }
 
 ReactDOM.render(<Home />, document.querySelector("#root"));
